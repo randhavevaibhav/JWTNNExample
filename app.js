@@ -30,8 +30,8 @@ mongoose.connect(process.env.mongoDBURL, { useNewUrlParser: true, useUnifiedTopo
 
 // routes
 app.get("*",checkUser);
-app.get('/',reuireAuth, (req, res) => res.render('home'));
-app.get('/smoothies',reuireAuth, (req, res) => res.render('smoothies'));
+app.get('/',reuireAuth, (req, res) => res.render('./home'));
+app.get('/smoothies',reuireAuth, (req, res) => res.render('./smoothies'));
 
 app.use(authRoutes);
 
