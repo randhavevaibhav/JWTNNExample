@@ -35,3 +35,5 @@ app.get('/smoothies',reuireAuth, (req, res) => res.render('./smoothies'));
 
 app.use(authRoutes);
 
+module.exports = {app}
+
